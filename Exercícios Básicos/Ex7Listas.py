@@ -64,6 +64,32 @@ lista.remove(maior)
 print(lista)
 
 
+#Exercício 4 - Listas de Listas
+
+notasTurma = ['Vinicius', 9.0, 10.0, 5.0, 'Victor', 10.0, 7.0, 6.0]
+
+nomes = []
+notasJuntas = []
+
+for i in range(len(notasTurma)):
+    if i % 4 == 0:
+        nomes.append(notasTurma[i])
+    else:
+        notasJuntas.append(notasTurma[i])
+        
+print(nomes)
+print(notasJuntas)
+
+#Criando Listas de Listas
+
+notas = []
+
+for i in range(0, len(notasJuntas), 3): #Pula de três em 3 na lista
+    notas.append([notasJuntas [i], notasJuntas[i+1], notasJuntas[i+2]])
+
+print(notas)
+
+
 
 
 
