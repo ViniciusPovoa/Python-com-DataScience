@@ -89,7 +89,7 @@ colunas = ["Notas", "Média Final", "Situação"]
 cadastro = {}
 
 
-# Associe cada coluna a uma sublista da lista listCompleta
+#Associe cada coluna a uma sublista da lista listCompleta
 for i in range(len(colunas)):
     cadastro[colunas[i]] = listCompleta[i + 1]
 
